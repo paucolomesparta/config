@@ -7,6 +7,11 @@ Personal macOS development environment configuration including:
 - **iTerm2** settings
 - Modern CLI tools (eza, bat, fd, ripgrep, fzf)
 
+### PW10k
+![pw10k config](powerlevel10k.png)
+### NVim
+![alt text](image.png)
+
 ## Installation
 
 Follow the step-by-step instructions in [SETUP.md](./SETUP.md).
