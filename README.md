@@ -11,6 +11,23 @@ Personal macOS development environment configuration including:
 
 Follow the step-by-step instructions in [SETUP.md](./SETUP.md).
 
+### One-Liner Install
+
+For a quick setup, run:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k && \
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && \
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && \
+git clone https://github.com/MichaelAquilina/zsh-you-should-use.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/you-should-use && \
+brew install eza bat fd ripgrep fzf neovim && \
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash && \
+cp -r ~/dotfiles/config/nvim ~/.config/nvim
+```
+
+Then copy the `.zshrc` from SETUP.md and run `p10k configure`.
+
 ### Quick Start
 
 1. Install prerequisites (Homebrew, iTerm2)
